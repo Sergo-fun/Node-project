@@ -16,7 +16,7 @@ export function CardEffect({heading, content, logo}) {
                         className='mx-auto'
                         alt='Project Logo'
                     />
-                    <h2 className="ml-0 leading-9 text-4xl text-center flex font-extrabold justify-center font-mono text-[#003366] dark:text-green-700">{heading}</h2>
+                    <h2 className="ml-0 leading-9 text-4xl text-center flex font-extrabold justify-center font-mono text-[#003366] dark:text-green-900">{heading}</h2>
                 </div>
                 <div className="absolute self-center pr-6 lg:scale-90 lg:pb-0 lg:pl-3 lg:pr-0 xl:pl-0 md:p-0 md:scale-95 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 dark:text-zinc-300">
                     <p className="mt-4 font-mono sm:w-100 w-52">{content}</p>

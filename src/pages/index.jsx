@@ -1,3 +1,5 @@
+
+
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -28,7 +30,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vortex</title>
+        <title>Главная</title>
         <meta name="description" content="Vortex Website" />
       </Head>
       <Container className="mt-9">
@@ -57,43 +59,45 @@ export default function Home() {
 
 
 
+
+
           </div>
           <div className="mt-10 flex-1 sm:ml-10 lg:ml-0 lg:mt-0">
             <div className="max-w-xl">
-              <h1 className="font-mono text-6xl font-extrabold tracking-tighter text-[#003366] dark:text-green-700 sm:text-6xl md:text-5xl lg:text-6xl">
+              <h1 className="font-mono text-6xl font-extrabold tracking-tighter text-[#003366] dark:text-green-900 sm:text-6xl md:text-5xl lg:text-6xl">
               VORTEX
               </h1>
               <p className="mt-4 font-mono text-xl leading-7 text-zinc-600 dark:text-zinc-400 ">
-              Мы разрабатываем сайты, которые способствуют росту бизнеса,
-               устраняя технические барьеры. Наши интеллектуальные чат-боты обеспечивают
+              Мы разрабатываем стильные сайты, которые способствуют росту бизнеса.
+              Наши интеллектуальные чат-боты обеспечивают
                круглосуточную поддержку клиентов и автоматизируют коммуникацию,
                 а веб-приложения повышают эффективность цифрового взаимодействия.
               </p>
               <div className="mt-6 ml-4 flex gap-6">
                 <Link
                   aria-label="Contact by Mail"
-                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-900"
                   href="mailto: info@vortex.of.by"
                 >
                   <FontAwesomeIcon icon={faEnvelope} size="2xl" />
                 </Link>
                 <Link
                   aria-label="Follow on Telegram"
-                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-900"
                   href="https://t.me/vortexby_bot"
                 >
                   <FontAwesomeIcon icon={faTelegram} size="2xl" />
                 </Link>
                 <Link
                   aria-label="Follow on WhatsApp"
-                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-900"
                   href="https://wa.me/375291392222"
                 >
                   <FontAwesomeIcon icon={faWhatsapp} size="2xl" />
                 </Link>
                 <Link
                   aria-label="Join on Viber"
-                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-900"
                   href="viber://chat?number=%2B375291392222"
                 >
                   <FontAwesomeIcon icon={faViber} size="2xl" />
@@ -107,13 +111,13 @@ export default function Home() {
           <Link href="/about" className="group relative inline-block text-lg">
             <span className="relative z-10 block overflow-hidden rounded-lg border-2 border-gray-900 px-5 py-3 transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
               <span className="absolute inset-0 h-full w-full rounded-lg bg-white px-5 py-3"></span>
-              <span className="absolute left-0 -ml-2 h-48 w-72 origin-top-right -translate-x-full translate-y-12 -rotate-90 bg-[#003366] transition-all duration-300 ease-in-out group-hover:-rotate-180 dark:bg-green-700"></span>
+              <span className="absolute left-0 -ml-2 h-48 w-72 origin-top-right -translate-x-full translate-y-12 -rotate-90 bg-[#003366] transition-all duration-300 ease-in-out group-hover:-rotate-180 dark:bg-green-900"></span>
               <span className="relative font-mono text-xl font-black tracking-tighter">
                 Узнать больше
               </span>
             </span>
             <span
-              className="absolute bottom-0 right-0 mb-3 mr-2 h-14 w-full rounded-lg bg-[#003366] transition-all duration-200 ease-linear group-hover:m-0 dark:bg-green-700"
+              className="absolute bottom-0 right-0 mb-3 mr-2 h-14 w-full rounded-lg bg-[#003366] transition-all duration-200 ease-linear group-hover:m-0 dark:bg-green-900"
               data-rounded="rounded-lg"
             ></span>
           </Link>
@@ -123,7 +127,7 @@ export default function Home() {
         <div className="mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <div className="grid grid-cols-12">
-              <div className=" relative -left-2 top-2 hidden h-12 w-12 translate-x-px transform items-center justify-center rounded-full bg-[#003366] p-2 dark:bg-green-700 md:flex">
+              <div className=" relative -left-2 top-2 hidden h-12 w-12 translate-x-px transform items-center justify-center rounded-full bg-[#003366] p-2 dark:bg-green-900 md:flex">
                 <svg
                   aria-hidden="true"
                   role="img"
@@ -148,8 +152,8 @@ export default function Home() {
             </div>
 
             <p className=" font-mono text-lg text-zinc-600 dark:text-zinc-400 ">
-            Сэкономьте время, избегайте начала с нуля и создавайте впечатляющие 
-            сайты и веб-приложения с легкостью.
+            Сэкономьте время и приобретайте впечатляющие 
+            сайты и веб-приложения.
              Оставляйте заявку на нашем сайте или воспользуйтесь Telegram, 
             опишите свою проблему и после короткого звонка мы начнем разработку.
             Упростите рабочий процесс и сотрудничайте с нами для создания индивидуальных решений, 
@@ -173,8 +177,8 @@ export default function Home() {
           </div>
           <div className="mt-12 text-center">
             <Link
-              className="group relative inline-flex items-center overflow-hidden rounded-lg bg-[#003366] px-8 py-3 text-white focus:outline-none active:bg-[#003366] dark:bg-green-700 dark:text-zinc-900"
-              href="/projects"
+              className="group relative inline-flex items-center overflow-hidden rounded-lg bg-[#003366] px-8 py-3 text-white focus:outline-none active:bg-[#003366] dark:bg-green-900 dark:text-zinc-900"
+              href="/ideas"
             >
               <span className="absolute right-0 flex-shrink-0 translate-x-full rounded-full border border-current bg-white p-1 text-black transition-transform group-hover:-translate-x-4">
                 <svg
@@ -193,7 +197,7 @@ export default function Home() {
                 </svg>
               </span>
               <span className="font-mono font-semibold transition-all group-hover:mr-6">
-                View All Projects
+                Перейти к ценам
               </span>
             </Link>
           </div>

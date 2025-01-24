@@ -7,8 +7,8 @@ import { getAllIdeas } from '@/helper/getAllIdeas'
 
 function Article({ article }) {
   return (
-    <article className="mt-5 sm:mt-0 md:grid md:grid-flow-col md:grid-cols-4 md:items-baseline">
-      <Card className="md:col-span-3">
+    <article className="flex flex-col">
+      <Card className="flex-grow">
         <Card.Title href={`/ideas/2024/${article.slug}`}>
           {article.title}
         </Card.Title>
@@ -38,15 +38,10 @@ export default function Ideas({ articles }) {
           </p>
         </div>
         <Container.Inner>
-          <div className="mt-10 flex justify-center sm:mt-20">
-            <div className="grid gap-6 gap-y-8 md:grid-flow-col md:grid-rows-4">
-              {articles.map((article) => (
-                <Article key={article.slug} article={article} />
-              ))}
-            </div>
-          </div>
-          <div className="mt-16 text-center">
-           
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
           </div>
         </Container.Inner>
       </Container>

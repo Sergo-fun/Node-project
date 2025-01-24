@@ -21,22 +21,16 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>
-          Projects
-        </title>
-        <meta
-          name="description"
-          content="About AOSSIE's Projects"
-        />
+        <title>Услуги</title>
+        <meta name="description" content="About AOSSIE's Projects" />
       </Head>
       <Container className="mt-20 mb-28">
         <div className="mt-5">
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg font-mono leading-7'> Мы соблюдаем конфиденциальность наших клиентов, а также следуем всем станадратм качества в разработке программного обеспечения.</p>
+          <p className='text-zinc-600 dark:text-zinc-400 text-lg font-mono leading-7'>
+            Чат-боты могут быть интегрированы с различными платформами, такими как Telegram, WhatsApp, VK и Instagram, что позволяет автоматизировать коммуникацию с клиентами и обеспечивать более быстрые отклики на запросы. Для сайтов, в зависимости от нужд проекта, можно использовать такие технологии как JavaScript, TypeScript, а также конструкторы WordPress, Tilda. При необходимости, могут быть использованы REST API и базы данных для хранения и обработки информации.
+          </p>
         </div>
         <div className='mt-16'>
-          {/* <h1 className="text-4xl font-mono font-extrabold tracking-tighter text-zinc-800 dark:text-zinc-100">
-            Active Projects
-          </h1> */}
           <SectionHeading>Наши услуги:</SectionHeading>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg font-mono leading-7 mt-3'></p>
           <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-12 mb-16">
@@ -51,45 +45,14 @@ export default function Projects() {
                   />
                 </div>
                 <h2 className="mt-6 text-2xl font-semibold font-mono text-zinc-800 dark:text-zinc-100">
-                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                  {project.name}
                 </h2>
                 <Card.Description>{project.description}</Card.Description>
-                <p className="relative z-10 mt-6 flex text-md font-semibold font-mono text-zinc-600 transition group-hover:text-[#003366] dark:group-hover:text-green-900 dark:text-zinc-200">
-                  <LinkIcon className="h-6 w-6 flex-none scale-110" />
-                  <span className="ml-2">{project.link.label}</span>
-                </p>
               </Card>
             ))}
           </ul>
-
-          {/* <h1 className="text-4xl font-mono font-extrabold tracking-tighter text-zinc-800 dark:text-zinc-100">
-            InActive Projects
-          </h1> */}
-          {/* <SectionHeading>Past Projects</SectionHeading>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg font-mono leading-7 mt-3'>The following projects are currently inactive. If you are brave and independent, you are welcome and even encouraged to contribute to these projects as well. However, help from mentors will be significantly reduced.</p>
-          <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-12 mb-16">
-            {projects.map((project) => (
-              <Card as="li" key={project.name}>
-                <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-lg bg-white shadow-md shadow-zinc-800/20 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-white/10 dark:shadow-white/10">
-                  <Image
-                    src={project.logo}
-                    alt="Project Logo"
-                    unoptimized
-                  />
-                </div>
-                <h2 className="mt-6 text-2xl font-semibold font-mono text-zinc-800 dark:text-zinc-100">
-                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
-                </h2>
-                <Card.Description>{project.description}</Card.Description>
-                <p className="relative z-10 mt-6 flex text-md font-semibold font-mono text-zinc-600 transition group-hover:text-[#003366] dark:group-hover:text-green-900 dark:text-zinc-200">
-                  <LinkIcon className="h-6 w-6 flex-none scale-110" />
-                  <span className="ml-2">{project.link.label}</span>
-                </p>
-              </Card>
-            ))}
-          </ul> */}
         </div>
       </Container>
     </>
-    )
+  )
 }
