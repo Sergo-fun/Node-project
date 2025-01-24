@@ -11,6 +11,9 @@ import {
   faGithub,
   faGitlab,
   faTwitter,
+  faTelegram,
+  faWhatsapp,
+  faViber
 } from '@fortawesome/free-brands-svg-icons'
 import { CardEffect } from '@/components/CardEffect'
 import { Banner } from '@/components/Banner'
@@ -25,67 +28,77 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AOSSIE</title>
-        <meta name="description" content="AOSSIE Website" />
+        <title>Vortex</title>
+        <meta name="description" content="Vortex Website" />
       </Head>
       <Container className="mt-9">
         <div className="flex flex-col sm:flex-row">
           <div className="flex-1 self-center">
-            <Image
-              src="./logo1.png"
-              width={320}
-              height={300}
-              className="mx-auto scale-110"
-              alt="AOSSIE Logo"
-            />
+          <video
+  src="./video1.mp4"
+  width={320}
+  height={300}
+  className="mx-auto scale-110"
+  alt="Vortex Logo"
+  style={{
+    marginLeft: '40px',
+    borderRadius: '15px',
+    objectFit: 'cover', // Урезать видео
+    objectPosition: 'center bottom', // Сместить внизу
+  }}
+  controls={false} // Отключаем элементы управления
+  autoPlay // Видео будет запускаться автоматически
+  muted // Молчит, если нужно
+  loop // Можно добавить зацикливание
+>
+  Ваш браузер не поддерживает тег video.
+</video>
+
+
+
+
           </div>
           <div className="mt-10 flex-1 sm:ml-10 lg:ml-0 lg:mt-0">
             <div className="max-w-xl">
-              <h1 className="font-mono text-6xl font-extrabold tracking-tighter text-[#00843D] dark:text-yellow-400 sm:text-6xl md:text-5xl lg:text-6xl">
-                We Innovate <br /> We Educate
+              <h1 className="font-mono text-6xl font-extrabold tracking-tighter text-[#003366] dark:text-green-700 sm:text-6xl md:text-5xl lg:text-6xl">
+              VORTEX
               </h1>
               <p className="mt-4 font-mono text-xl leading-7 text-zinc-600 dark:text-zinc-400 ">
-                We are an Australian not-for-profit umbrella organization for
-                open-source projects. We believe the open-source philosophy
-                provides a resource-efficient channel to transfer knowledge and
-                achieve innovation and education.
+              Мы разрабатываем сайты, которые способствуют росту бизнеса,
+               устраняя технические барьеры. Наши интеллектуальные чат-боты обеспечивают
+               круглосуточную поддержку клиентов и автоматизируют коммуникацию,
+                а веб-приложения повышают эффективность цифрового взаимодействия.
               </p>
               <div className="mt-6 ml-4 flex gap-6">
                 <Link
                   aria-label="Contact by Mail"
-                  className=" text-zinc-500 transition hover:text-[#00843D] dark:text-zinc-400 dark:hover:text-yellow-400"
-                  href="mailto:aossie.oss@gmail.com"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  href="mailto: info@vortex.of.by"
                 >
                   <FontAwesomeIcon icon={faEnvelope} size="2xl" />
                 </Link>
                 <Link
-                  aria-label="Follow on GitLab"
-                  className=" text-zinc-500 transition hover:text-[#00843D] dark:text-zinc-400 dark:hover:text-yellow-400"
-                  href="https://gitlab.com/aossie"
+                  aria-label="Follow on Telegram"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  href="https://t.me/vortexby_bot"
                 >
-                  <FontAwesomeIcon icon={faGitlab} size="2xl" />
+                  <FontAwesomeIcon icon={faTelegram} size="2xl" />
                 </Link>
                 <Link
-                  aria-label="Follow on GitHub"
-                  className=" text-zinc-500 transition hover:text-[#00843D] dark:text-zinc-400 dark:hover:text-yellow-400"
-                  href="https://github.com/AOSSIE-Org"
+                  aria-label="Follow on WhatsApp"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  href="https://wa.me/375291392222"
                 >
-                  <FontAwesomeIcon icon={faGithub} size="2xl" />
+                  <FontAwesomeIcon icon={faWhatsapp} size="2xl" />
                 </Link>
                 <Link
-                  aria-label="Join on Discord"
-                  className=" text-zinc-500 transition hover:text-[#00843D] dark:text-zinc-400 dark:hover:text-yellow-400"
-                  href="https://discord.com/invite/6mFZ2S846n"
+                  aria-label="Join on Viber"
+                  className=" text-zinc-500 transition hover:text-[#003366] dark:text-zinc-400 dark:hover:text-green-700"
+                  href="viber://chat?number=%2B375291392222"
                 >
-                  <FontAwesomeIcon icon={faDiscord} size="2xl" />
+                  <FontAwesomeIcon icon={faViber} size="2xl" />
                 </Link>
-                <Link
-                  aria-label="Follow on Twitter"
-                  className=" text-zinc-500 transition hover:text-[#00843D] dark:text-zinc-400 dark:hover:text-yellow-400"
-                  href="https://twitter.com/aossie_org"
-                >
-                  <FontAwesomeIcon icon={faTwitter} size="2xl" />
-                </Link>
+                
               </div>
             </div>
           </div>
@@ -94,13 +107,13 @@ export default function Home() {
           <Link href="/about" className="group relative inline-block text-lg">
             <span className="relative z-10 block overflow-hidden rounded-lg border-2 border-gray-900 px-5 py-3 transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
               <span className="absolute inset-0 h-full w-full rounded-lg bg-white px-5 py-3"></span>
-              <span className="absolute left-0 -ml-2 h-48 w-72 origin-top-right -translate-x-full translate-y-12 -rotate-90 bg-[#00843D] transition-all duration-300 ease-in-out group-hover:-rotate-180 dark:bg-yellow-400"></span>
+              <span className="absolute left-0 -ml-2 h-48 w-72 origin-top-right -translate-x-full translate-y-12 -rotate-90 bg-[#003366] transition-all duration-300 ease-in-out group-hover:-rotate-180 dark:bg-green-700"></span>
               <span className="relative font-mono text-xl font-black tracking-tighter">
-                Learn More About Us
+                Узнать больше
               </span>
             </span>
             <span
-              className="absolute bottom-0 right-0 mb-3 mr-2 h-14 w-full rounded-lg bg-[#00843D] transition-all duration-200 ease-linear group-hover:m-0 dark:bg-yellow-400"
+              className="absolute bottom-0 right-0 mb-3 mr-2 h-14 w-full rounded-lg bg-[#003366] transition-all duration-200 ease-linear group-hover:m-0 dark:bg-green-700"
               data-rounded="rounded-lg"
             ></span>
           </Link>
@@ -110,7 +123,7 @@ export default function Home() {
         <div className="mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <div className="grid grid-cols-12">
-              <div className=" relative -left-2 top-2 hidden h-12 w-12 translate-x-px transform items-center justify-center rounded-full bg-[#00843D] p-2 dark:bg-yellow-400 md:flex">
+              <div className=" relative -left-2 top-2 hidden h-12 w-12 translate-x-px transform items-center justify-center rounded-full bg-[#003366] p-2 dark:bg-green-700 md:flex">
                 <svg
                   aria-hidden="true"
                   role="img"
@@ -129,17 +142,18 @@ export default function Home() {
               </div>
               <div className="col-span-8 mt-3 self-center lg:col-start-2 lg:-ml-6">
                 <h1 className="font-mono text-3xl font-black capitalize tracking-tighter text-zinc-800 dark:text-white">
-                  projects
+                  О нас
                 </h1>
               </div>
             </div>
 
             <p className=" font-mono text-lg text-zinc-600 dark:text-zinc-400 ">
-              Our Projects, where we showcase our tech wizardry and
-              code-slinging skills!! <br></br> Be a part of our community and
-              contribute to meaningful projects that are making a difference.
-              Explore our selection of projects and find the perfect opportunity
-              to showcase your skills and make an impact.
+            Сэкономьте время, избегайте начала с нуля и создавайте впечатляющие 
+            сайты и веб-приложения с легкостью.
+             Оставляйте заявку на нашем сайте или воспользуйтесь Telegram, 
+            опишите свою проблему и после короткого звонка мы начнем разработку.
+            Упростите рабочий процесс и сотрудничайте с нами для создания индивидуальных решений, 
+            которые идеально подходят для вашего бизнеса.
             </p>
           </div>
           <div className="mt-10 flex flex-col items-center gap-6 sm:flex-row sm:justify-evenly sm:gap-0">
@@ -159,7 +173,7 @@ export default function Home() {
           </div>
           <div className="mt-12 text-center">
             <Link
-              className="group relative inline-flex items-center overflow-hidden rounded-lg bg-[#00843D] px-8 py-3 text-white focus:outline-none active:bg-[#00843D] dark:bg-yellow-400 dark:text-zinc-900"
+              className="group relative inline-flex items-center overflow-hidden rounded-lg bg-[#003366] px-8 py-3 text-white focus:outline-none active:bg-[#003366] dark:bg-green-700 dark:text-zinc-900"
               href="/projects"
             >
               <span className="absolute right-0 flex-shrink-0 translate-x-full rounded-full border border-current bg-white p-1 text-black transition-transform group-hover:-translate-x-4">

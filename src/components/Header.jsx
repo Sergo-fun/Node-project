@@ -120,10 +120,10 @@ function MobileNavigation(props) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 font-mono font-black divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/ideas">Ideas</MobileNavItem>
-                <MobileNavItem href="/apply">Apply</MobileNavItem>
+                <MobileNavItem href="/about">О нас</MobileNavItem>
+                <MobileNavItem href="/projects">Услуги</MobileNavItem>
+                <MobileNavItem href="/ideas">Цены</MobileNavItem>
+                <MobileNavItem href="/apply">Заявка</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -143,13 +143,13 @@ function NavItem({ href, children }) {
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
-            ? 'text-[#00843D] dark:text-yellow-400'
-            : 'hover:text-[#00843D] dark:hover:text-yellow-400'
+            ? 'text-[#003366] dark:text-green-900'
+            : 'hover:text-[#003366] dark:hover:text-green-900'
         )}
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-[#00843D]/0 via-[#00843D]/40 to-aus-[#00843D]/0 dark:from-yellow-400/0 dark:via-yellow-400/40 dark:to-yellow-400/0" />
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-[#003366]/0 via-[#003366]/40 to-aus-[#003366]/0 dark:from-green-900/0 dark:via-green-900/40 dark:to-green-900/0" />
         )}
       </Link>
     </li>
@@ -160,10 +160,10 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex font-mono rounded-full bg-white/90 px-3 text-md font-semibold text-zinc-800 shadow-2xl shadow-black/4 dark:shadow-xl dark:shadow-white/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/ideas">Ideas</NavItem>
-        <NavItem href="/apply">Apply</NavItem>
+        <NavItem href="/about">О нас</NavItem>
+        <NavItem href="/projects">Услуги</NavItem>
+        <NavItem href="/ideas">Цены</NavItem>
+        <NavItem href="/apply">Заявка</NavItem>
       </ul>
     </nav>
   )
@@ -198,7 +198,7 @@ function ModeToggle() {
       className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-black/10 hover:ring-black/20 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
       onClick={toggleMode}
     >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-yellow-400 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-yellow-500" />
+      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-green-900 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-yellow-500" />
       <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
     </button>
   )
