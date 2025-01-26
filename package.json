@@ -2,6 +2,8 @@
   "name": "aossie",
   "version": "1.0.0",
   "description": "Aossie website",
+  "type": "module",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
