@@ -8,13 +8,6 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-/output/
-
-# production
-/build
 
 # misc
 .DS_Store

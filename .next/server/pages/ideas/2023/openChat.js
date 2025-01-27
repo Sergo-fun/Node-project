@@ -1,0 +1,34 @@
+"use strict";(()=>{var e={};e.id=4571,e.ids=[4571,2888,660],e.modules={1323:(e,t)=>{Object.defineProperty(t,"l",{enumerable:!0,get:function(){return function e(t,r){return r in t?t[r]:"then"in t&&"function"==typeof t.then?t.then(t=>e(t,r)):"function"==typeof t&&"default"===r?t:void 0}}})},4775:(e,t,r)=>{r.a(e,async(e,a)=>{try{r.r(t),r.d(t,{config:()=>x,default:()=>u,getServerSideProps:()=>h,getStaticPaths:()=>m,getStaticProps:()=>p,reportWebVitals:()=>f,routeModule:()=>v,unstable_getServerProps:()=>P,unstable_getServerSideProps:()=>k,unstable_getStaticParams:()=>j,unstable_getStaticPaths:()=>b,unstable_getStaticProps:()=>g});var n=r(7093),s=r(5244),i=r(1323),o=r(9071),l=r(7094),d=r(5379),c=e([l,d]);[l,d]=c.then?(await c)():c;let u=(0,i.l)(d,"default"),p=(0,i.l)(d,"getStaticProps"),m=(0,i.l)(d,"getStaticPaths"),h=(0,i.l)(d,"getServerSideProps"),x=(0,i.l)(d,"config"),f=(0,i.l)(d,"reportWebVitals"),g=(0,i.l)(d,"unstable_getStaticProps"),b=(0,i.l)(d,"unstable_getStaticPaths"),j=(0,i.l)(d,"unstable_getStaticParams"),P=(0,i.l)(d,"unstable_getServerProps"),k=(0,i.l)(d,"unstable_getServerSideProps"),v=new n.PagesRouteModule({definition:{kind:s.x.PAGES,page:"/ideas/2023/openChat",pathname:"/ideas/2023/openChat",bundlePath:"",filename:""},components:{App:l.default,Document:o.default},userland:d});a()}catch(e){a(e)}})},5379:(e,t,r)=>{r.a(e,async(e,a)=>{try{r.r(t),r.d(t,{default:()=>u,meta:()=>d});var n=r(997),s=r(1151),i=r(1824),o=e([i]);i=(o.then?(await o)():o)[0];let d={title:"OpenChat",description:"a decentralised platform for secure and private messaging and file sharing built on top of blockchain"},c=e=>n.jsx(i.P,Object.assign({meta:d},e));function l(e){let t=Object.assign({h3:"h3",p:"p",h2:"h2",code:"code"},(0,s.ah)(),e.components);return(0,n.jsxs)(n.Fragment,{children:[n.jsx(t.h3,{children:"Project Duration: 350 hrs"}),"\n",n.jsx(t.p,{children:"a decentralised platform for secure and private messaging and file sharing built on top of blockchain"}),"\n",n.jsx(t.h2,{children:"Mentors:"}),"\n",n.jsx(t.p,{children:n.jsx(t.code,{children:"Chirag Singhal"})})]})}let u=function(e={}){return n.jsx(c,Object.assign({},e,{children:n.jsx(l,e)}))};a()}catch(e){a(e)}})},1824:(e,t,r)=>{r.a(e,async(e,a)=>{try{r.d(t,{P:()=>m});var n=r(997),s=r(968),i=r.n(s),o=r(1163),l=r(5362),d=r(1123),c=r(7197),u=r(4563),p=e([u]);function m({children:e,meta:t,isRssFeed:r=!1}){let a=(0,o.useRouter)();return r?e:(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(i(),{children:[n.jsx("title",{children:`${t.title}`}),n.jsx("meta",{name:"description",content:t.description})]}),n.jsx(l.W,{className:"mt-16 mb-20",children:n.jsx("div",{className:"xl:relative",children:(0,n.jsxs)("div",{className:"mx-auto max-w-2xl",children:[n.jsx("button",{type:"button",onClick:()=>a.back(),"aria-label":"Go back to articles",className:"group mt-10 mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:hover:border-2 hover:border-2 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:left-10 lg:mb-0 xl:-top-1.5 xl:left-0",children:n.jsx(c.FontAwesomeIcon,{className:"h-4 w-4 text-zinc-500 transition group-hover:text-zinc-700 dark:text-zinc-500 dark:group-hover:text-zinc-400",icon:u.faArrowLeft})}),(0,n.jsxs)("article",{children:[n.jsx("header",{className:"flex flex-col",children:n.jsx("h1",{className:"mt-6 text-4xl font-mono font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl",children:t.title})}),n.jsx(d.M,{className:"mt-8 font-mono",children:e})]})]})})})]})}u=(p.then?(await p)():p)[0],a()}catch(e){a(e)}})},1123:(e,t,r)=>{r.d(t,{M:()=>i});var a=r(997),n=r(8103),s=r.n(n);function i({children:e,className:t}){return a.jsx("div",{className:s()(t,"prose prose-code:p-2 prose-code:bg-slate-300 dark:prose-code:bg-slate-100 dark:prose-code:text-zinc-800 prose-h2:mt-0 prose-li:mt-0 prose-headings:mt-0 prose-li:mb-2 prose-headings:font-extrabold prose-h3:mb-6 dark:prose-invert"),children:e})}},9071:(e,t,r)=>{r.r(t),r.d(t,{default:()=>i});var a=r(997),n=r(6859);let s=`
+  let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+
+  updateMode()
+  darkModeMediaQuery.addEventListener('change', updateModeWithoutTransitions)
+  window.addEventListener('storage', updateModeWithoutTransitions)
+
+  function updateMode() {
+    let isSystemDarkMode = darkModeMediaQuery.matches
+    let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && isSystemDarkMode)
+
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode
+    }
+  }
+
+  function disableTransitionsTemporarily() {
+    document.documentElement.classList.add('[&_*]:!transition-none')
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('[&_*]:!transition-none')
+    }, 0)
+  }
+
+  function updateModeWithoutTransitions() {
+    disableTransitionsTemporarily()
+    updateMode()
+  }
+`;function i(){return(0,a.jsxs)(n.Html,{className:"h-full antialiased",lang:"en",children:[(0,a.jsxs)(n.Head,{children:[a.jsx("script",{dangerouslySetInnerHTML:{__html:s}}),a.jsx("link",{rel:"alternate",type:"application/rss+xml",href:`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.xml`}),a.jsx("link",{rel:"alternate",type:"application/feed+json",href:`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`})]}),(0,a.jsxs)("body",{className:"flex h-full flex-col bg-zinc-100 dark:bg-black",children:[a.jsx(n.Main,{}),a.jsx(n.NextScript,{})]})]})}},5244:(e,t)=>{var r;Object.defineProperty(t,"x",{enumerable:!0,get:function(){return r}}),function(e){e.PAGES="PAGES",e.PAGES_API="PAGES_API",e.APP_PAGE="APP_PAGE",e.APP_ROUTE="APP_ROUTE"}(r||(r={}))},7197:e=>{e.exports=require("@fortawesome/react-fontawesome")},8103:e=>{e.exports=require("clsx")},2235:e=>{e.exports=require("focus-visible")},2785:e=>{e.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},968:e=>{e.exports=require("next/head")},6689:e=>{e.exports=require("react")},6405:e=>{e.exports=require("react-dom")},997:e=>{e.exports=require("react/jsx-runtime")},303:e=>{e.exports=import("@fortawesome/free-brands-svg-icons")},4563:e=>{e.exports=import("@fortawesome/free-solid-svg-icons")},7147:e=>{e.exports=require("fs")},1017:e=>{e.exports=require("path")},2781:e=>{e.exports=require("stream")},9796:e=>{e.exports=require("zlib")},1151:(e,t,r)=>{r.d(t,{ah:()=>s});var a=r(6689);let n=a.createContext({});function s(e){let t=a.useContext(n);return a.useMemo(()=>"function"==typeof e?e(t):{...t,...e},[t,e])}}};var t=require("../../../webpack-runtime.js");t.C(e);var r=e=>t(t.s=e),a=t.X(0,[6255,2453,6859,7094],()=>r(4775));module.exports=a})();

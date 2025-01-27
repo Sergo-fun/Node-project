@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/projects": "pages/projects.js",
+  "/about": "pages/about.js",
+  "/ideas": "pages/ideas.js",
+  "/apply": "pages/apply.js",
+  "/ideas/2024/agora-blockchain": "pages/ideas/2024/agora-blockchain.js"
+}
